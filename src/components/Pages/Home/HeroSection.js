@@ -12,7 +12,7 @@ function HeroSection() {
           <div class="home-content text-center">
             <h1 class="hs-title-7 mb-40">
               <span class="wow charsAnimIn-1" data-splitting="chars">
-                Resonance <span class="font-alt">Creative</span> Studio
+                Empowering <span class="font-alt">Your</span> Web Presence.
               </span>
             </h1>
 
@@ -25,8 +25,9 @@ function HeroSection() {
                 <div class="row wow fadeInUpShort" data-wow-delay="1.35s">
                   <div class="col-sm-6 col-md-7 text-center text-sm-start mb-xs-30">
                     <p class="mb-0">
-                      Resonance is an award-winning studio specializing in
-                      branding, design and engineering.
+                      Elevate your brand online with our expert web development.
+                      From concept to code, we turn ideas into digital success
+                      stories.
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-5 text-center text-sm-end local-scroll">

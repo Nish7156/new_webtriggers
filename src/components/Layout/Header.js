@@ -2,6 +2,34 @@ import React, { useState } from "react";
 
 function Header() {
   const [isOpen, setisOpen] = useState(false);
+  const HeaderMenus = [
+    {
+      id: 1,
+      title: "Home",
+      link: "",
+    },
+    {
+      id: 2,
+      title: "About",
+      link: "",
+    },
+    {
+      id: 3,
+      title: "Services",
+      link: "",
+    },
+    {
+      id: 4,
+      title: "Portfolio",
+      link: "",
+    },
+    {
+      id: 5,
+      title: "Contact",
+      link: "",
+    },
+  ];
+  let isActive = true;
   return (
     <>
       <nav class="main-nav dark dark-mode transparent stick-fixed wow-menubar wch-unset">
@@ -32,33 +60,25 @@ function Header() {
             style={{ display: isOpen ? "block" : "" }}
           >
             <ul class="clearlist local-scroll">
-              <li>
-                <a href="strong-multi-page-dark.html" class="active">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="strong-about-dark.html">About</a>
-              </li>
-              <li>
-                <a href="strong-services-dark.html">Services</a>
-              </li>
-              <li>
-                <a href="strong-portfolio-dark.html">Portfolio</a>
-              </li>
-              <li>
-                <a href="strong-blog-dark.html">Blog</a>
-              </li>
-              <li>
-                <a href="strong-contact-dark.html">Contact</a>
-              </li>
+              {HeaderMenus.map((data, index) => {
+                return (
+                  <li key={data.id}>
+                    <a
+                      href={`${data.link}`}
+                      className={isActive && index == 0 ? "active" : ""}
+                    >
+                      {data.title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
 
             <ul class="items-end clearlist local-scroll">
               <li>
                 <a href="strong-contact-dark.html" class="opacity-1 no-hover">
                   <span class="link-hover-anim" data-link-animate="y">
-                    <span class="icon-ellipse me-1"></span> Say hello
+                    <span class="icon-ellipse me-1"></span> Get Touch
                   </span>
                 </a>
               </li>
