@@ -9,8 +9,8 @@ function AboutSection() {
             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 class="section-caption-border">About Agency</h2>
               <h3 class="section-title-strong mb-90 mb-sm-50">
-                Group <span class="font-alt">of</span> Creators
-                <span class="font-alt"> and </span> Minimalism Lovers
+                Simplify Web Design:{" "}
+                <span class="font-alt">Join Us at webtriggers developers</span>
               </h3>
             </div>
           </div>

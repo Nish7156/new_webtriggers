@@ -65,7 +65,7 @@ function Header() {
                   <li key={data.id}>
                     <a
                       href={`${data.link}`}
-                      className={isActive && index == 0 ? "active" : ""}
+                      className={isActive && index === 0 ? "active" : ""}
                     >
                       {data.title}
                     </a>
