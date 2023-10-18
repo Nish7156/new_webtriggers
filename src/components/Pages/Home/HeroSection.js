@@ -32,7 +32,7 @@ function HeroSection() {
                   </div>
                   <div class="col-sm-6 col-md-5 text-center text-sm-end local-scroll">
                     <a
-                      href="strong-portfolio-dark.html"
+                      href="https://work.webtriggers.tech"
                       class="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
                     >
                       <span>Discover Works</span>
