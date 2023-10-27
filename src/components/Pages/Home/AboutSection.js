@@ -41,16 +41,17 @@ function AboutSection() {
             <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10">
               <div class="wow linesAnimIn" data-splitting="lines">
                 <p class="lead mt-0 mb-40">
-                  Resonance is a full-service creative studio creating beautiful
-                  digital experiences and products. We are a company
-                  specializing in design and engineering.
+                  Web development: Build the look (HTML, CSS, JavaScript),
+                  structure (server, database), and functionality (frameworks
+                  like React). Secure, optimize (SEO), and test for a robust
+                  digital presence.
                 </p>
                 <p class="mb-40">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum euismod augue ac faucibus aliquet. Fusce eu nibh
-                  enim. Etiam sit amet felis molestie tellus condimentum
-                  feugiat. Sed scelerisque dui id maximus imperdiet euismod
-                  ultrices placerat euismod ultrices placerat.
+                  Web development is like constructing a digital space.
+                  Front-end (HTML, CSS, JavaScript) is the visual design,
+                  back-end (server, database) is the infrastructure, and
+                  frameworks like React and Django are the tools. Security, SEO,
+                  and testing are the finishing touches in this dynamic field.
                 </p>
               </div>
 

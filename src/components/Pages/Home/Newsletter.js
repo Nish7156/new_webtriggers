@@ -11,7 +11,7 @@ function Newsletter() {
           <div class="row">
             <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 wow fadeInUp">
               <h2 class="section-title text-center mb-40">
-                Looking for
+                Looking for{' '}
                 <span class="font-alt">exclusive creative</span> content?
               </h2>
 
