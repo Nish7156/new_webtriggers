@@ -15,11 +15,7 @@ function PortfolioSection() {
                 Creativity meets <span class="font-alt">technology</span> here
               </h3>
               <p class="mb-0">
-                Suspendisse pellentesque mi non ipsum finibus vestibulum.
-                Vestibulum posuere magna auctor malesuada scelerisque. Sed sed
-                sem id magna congue interdum et sit amet leo. Praesent sit amet
-                ipsum orci. Fusce faucibus nibh at quam facilisis venenatis
-                posuere non quis lacus.
+              Creative Fusion: The Intersection of Artistry and Technology in Photography. Here, innovative techniques and cutting-edge tools blend seamlessly with artistic vision, pushing the boundaries of visual storytelling.
               </p>
             </div>
           </div>

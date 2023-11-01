@@ -15,12 +15,10 @@ function SplitSection() {
               <div>
                 <h2 class="section-title mb-30">
                   Looking for
-                  <span class="font-alt">exclusive creative</span> services?
+                  <span class="font-alt">{' '}exclusive creative</span> services?
                 </h2>
                 <p class="mb-50">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam id tellus rutrum, consectetur tellus et, posuere
-                  mauris. Sed sit amet lacinia nunc vestibulum non varius nunc.
+                Embark on a Journey of Creativity: Elevate Your Projects with Our Exclusive Services, Crafted Just for You!
                 </p>
                 <div class="local-scroll">
                   <a
