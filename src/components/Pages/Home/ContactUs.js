@@ -11,9 +11,9 @@ function ContactUs() {
                 Let’s work <span class="font-alt">together</span>
               </h2>
               <p class="mb-0">
-                Integer non efficitur ex lorem ipsum. Praesent mauris, dignissim
-                ultricies sapien non, pulvinar volutpat elit donec lorem impsum
-                blandit mollis ipsum, eu fringilla.
+                Code Collaboration: Join forces with us for seamless web
+                development, where expertise meets innovation to build
+                exceptional online experiences.
               </p>
             </div>
 
@@ -152,10 +152,10 @@ function ContactUs() {
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-tip pt-20 pt-sm-0">
-                      <i class="icon-info size-16"></i>
+                      {/* <i class="icon-info size-16"></i>
                       All the fields are required. By sending the form you agree
                       to the <a href="#">Terms & Conditions</a> and
-                      <a href="#">Privacy Policy</a>.
+                      <a href="#">Privacy Policy</a>. */}
                     </div>
                   </div>
                   <div class="col-sm-6">

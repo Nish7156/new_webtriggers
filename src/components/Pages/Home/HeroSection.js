@@ -25,7 +25,7 @@ function HeroSection() {
                 <div class="row wow fadeInUpShort" data-wow-delay="1.35s">
                   <div class="col-sm-6 col-md-7 text-center text-sm-start mb-xs-30">
                     <p class="mb-0">
-                      Elevate your brand online with our expert web development.
+                    Elevate your brand online with our expert web development.
                       From concept to code, we turn ideas into digital success
                       stories.
                     </p>

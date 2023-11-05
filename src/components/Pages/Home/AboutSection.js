@@ -7,7 +7,7 @@ function AboutSection() {
         <div class="container">
           <div class="row">
             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-              <h2 class="section-caption-border">About Agency</h2>
+              <h2 class="section-caption-border">About Company</h2>
               <h3 class="section-title-strong mb-90 mb-sm-50">
                 Simplify Web Design:{" "}
                 <span class="font-alt">Join Us at webtriggers developers</span>
@@ -20,7 +20,7 @@ function AboutSection() {
               <div class="call-action-4-images">
                 <div class="call-action-4-image-1">
                   <img
-                    src="images/demo-strong/section-image-1.jpg"
+                    src="images/banners/uiux-7.jpg"
                     alt="Image description"
                     class="wow scaleOutIn"
                     data-wow-duration="1.2s"
@@ -28,7 +28,7 @@ function AboutSection() {
                 </div>
                 <div class="call-action-4-image-2">
                   <img
-                    src="images/demo-strong/section-image-2.jpg"
+                    src="images/banners/uiux-2.jpg"
                     alt="Image description"
                     class="wow scaleOutIn"
                     data-wow-duration="1.2s"
@@ -41,10 +41,9 @@ function AboutSection() {
             <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10">
               <div class="wow linesAnimIn" data-splitting="lines">
                 <p class="lead mt-0 mb-40">
-                  Web development: Build the look (HTML, CSS, JavaScript),
-                  structure (server, database), and functionality (frameworks
-                  like React). Secure, optimize (SEO), and test for a robust
-                  digital presence.
+                  Crafting Digital Excellence: Design (HTML, CSS, JavaScript),
+                  Structure (Server, Database), Functionality (React), Secure,
+                  Optimize (SEO), Test for a Robust Web Presence.
                 </p>
                 <p class="mb-40">
                   Web development is like constructing a digital space.
@@ -71,7 +70,23 @@ function AboutSection() {
             <div class="col-lg-2 offset-xl-1 d-none d-lg-block">
               <div class="round overflow-hidden">
                 <img
-                  src="images/demo-strong/section-image-3.jpg"
+                  src="images/banners/uiux-3.jpg"
+                  alt="Image description"
+                  class="wow scaleOutIn"
+                  data-wow-duration="1.2s"
+                />
+              </div>
+              <div class="round overflow-hidden">
+                <img
+                  src="images/banners/uiux-4.jpg"
+                  alt="Image description"
+                  class="wow scaleOutIn"
+                  data-wow-duration="1.2s"
+                />
+              </div>
+              <div class="round overflow-hidden">
+                <img
+                  src="images/banners/uiux-6.jpg"
                   alt="Image description"
                   class="wow scaleOutIn"
                   data-wow-duration="1.2s"

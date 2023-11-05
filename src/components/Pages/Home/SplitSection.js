@@ -15,10 +15,11 @@ function SplitSection() {
               <div>
                 <h2 class="section-title mb-30">
                   Looking for
-                  <span class="font-alt">{' '}exclusive creative</span> services?
+                  <span class="font-alt"> exclusive creative</span> services?
                 </h2>
                 <p class="mb-50">
-                Embark on a Journey of Creativity: Elevate Your Projects with Our Exclusive Services, Crafted Just for You!
+                  Exclusive Creative Services Redefined: Elevate Your Vision
+                  with AI-Powered Ingenuity."
                 </p>
                 <div class="local-scroll">
                   <a
@@ -39,10 +40,7 @@ function SplitSection() {
               data-rellax-speed="0.5"
               data-rellax-percentage="0.5"
             >
-              <img
-                src="images/demo-strong/split-image-1.jpg"
-                alt="Image Description"
-              />
+              <img src="images/banners/ai-3.jpg" alt="Image Description" />
             </div>
           </div>
         </div>

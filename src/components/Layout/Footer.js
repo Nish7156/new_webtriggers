@@ -70,13 +70,13 @@ function Footer() {
             </div>
           </div>
 
-          <div class="footer-text text-center opacity-75 mt-n10 pb-50">
+          {/* <div class="footer-text text-center opacity-75 mt-n10 pb-50">
             Made with love for great people.
             <div class="small">
               Read <a href="#">Terms & Conditions</a> and
               <a href="#">Privacy Policy</a>.
             </div>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
