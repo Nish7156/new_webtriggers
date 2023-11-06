@@ -1,6 +1,44 @@
 import React from "react";
 
 function PortfolioSection() {
+  const ProjectsList = [
+    // {
+    //   id: 1,
+    //   title: "Toopgeek",
+    //   category: "Branding, UI/UX Design",
+    //   img: "/images/projects/topgeekai.jpg",
+    // },
+    // {
+    //   id: 2,
+    //   title: "Kofuku",
+    //   category: "Branding, UI/UX Design",
+    //   img: "/images/projects/kofuku.jpg",
+    // },
+    {
+      id: 3,
+      title: "RCSPL",
+      category: "Web Development",
+      img: "/images/projects/rcspl.png"
+    },
+    {
+      id: 4,
+      title: "YT Playlist Length Calculator",
+      category: "Web App Development",
+      img: "/images/projects/YT Playlist Length Calculator.png"
+    },
+    {
+      id: 5,
+      title: "Food Recipe App",
+      category: "Mobile App Design & Development",
+      img: "/images/projects/Food Recipe App_React Native.png"
+    },
+    {
+      id: 5,
+      title: "Links Sharing App",
+      category: "Web App Design & Development",
+      img: "/images/projects/links-sharing-app.png"
+    }
+  ];
   return (
     <>
       <section
@@ -15,106 +53,37 @@ function PortfolioSection() {
                 Creativity meets <span class="font-alt">technology</span> here
               </h3>
               <p class="mb-0">
-              Creative Fusion: The Intersection of Artistry and Technology in Photography. Here, innovative techniques and cutting-edge tools blend seamlessly with artistic vision, pushing the boundaries of visual storytelling.
+                Innovate, Iterate, Integrate: Elevating Web Development into the
+                Artistry of the Digital Age.
               </p>
             </div>
           </div>
 
           <div class="wow fadeInUp">
             <div class="portfolio-4-carousel slider-strong">
-              <div class="portfolio-4-item">
-                <a href="strong-portfolio-single-dark.html">
-                  <div class="portfolio-4-image">
-                    <img
-                      src="images/demo-strong/portfolio/1.jpg"
-                      alt="Image Description"
-                    />
+              {ProjectsList.map((data) => {
+                return (
+                  <div key={data.id} class="portfolio-4-item">
+                    <a href="/contact-us">
+                      <div class="portfolio-4-image ">
+                        <img
+                          src={`${data.img}`}
+                          style={{
+                            width: "100%",
+                            height: "400px",
+                            objectFit: "cover"
+                          }}
+                          alt="Image Description"
+                        />
+                      </div>
+                      <div class="portfolio-4-intro">
+                        <h4 class="portfolio-4-title">{data.title}</h4>
+                        <div class="portfolio-4-descr">{data.category}</div>
+                      </div>
+                    </a>
                   </div>
-                  <div class="portfolio-4-intro">
-                    <h4 class="portfolio-4-title">Rise of Design</h4>
-                    <div class="portfolio-4-descr">Branding, UI/UX Design</div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="portfolio-4-item">
-                <a href="strong-portfolio-single-dark.html">
-                  <div class="portfolio-4-image">
-                    <img
-                      src="images/demo-strong/portfolio/2.jpg"
-                      alt="Image Description"
-                    />
-                  </div>
-                  <div class="portfolio-4-intro">
-                    <h4 class="portfolio-4-title">Amplitude</h4>
-                    <div class="portfolio-4-descr">
-                      UI/UX Design, Development
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="portfolio-4-item">
-                <a href="strong-portfolio-single-dark.html">
-                  <div class="portfolio-4-image">
-                    <img
-                      src="images/demo-strong/portfolio/3.jpg"
-                      alt="Image Description"
-                    />
-                  </div>
-                  <div class="portfolio-4-intro">
-                    <h4 class="portfolio-4-title">Medium Scene</h4>
-                    <div class="portfolio-4-descr">Branding, Design</div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="portfolio-4-item">
-                <a href="strong-portfolio-single-dark.html">
-                  <div class="portfolio-4-image">
-                    <img
-                      src="images/demo-strong/portfolio/4.jpg"
-                      alt="Image Description"
-                    />
-                  </div>
-                  <div class="portfolio-4-intro">
-                    <h4 class="portfolio-4-title">Rise of Design</h4>
-                    <div class="portfolio-4-descr">Branding, UI/UX Design</div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="portfolio-4-item">
-                <a href="strong-portfolio-single-dark.html">
-                  <div class="portfolio-4-image">
-                    <img
-                      src="images/demo-strong/portfolio/5.jpg"
-                      alt="Image Description"
-                    />
-                  </div>
-                  <div class="portfolio-4-intro">
-                    <h4 class="portfolio-4-title">Amplitude</h4>
-                    <div class="portfolio-4-descr">
-                      UI/UX Design, Development
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="portfolio-4-item">
-                <a href="strong-portfolio-single-dark.html">
-                  <div class="portfolio-4-image">
-                    <img
-                      src="images/demo-strong/portfolio/6.jpg"
-                      alt="Image Description"
-                    />
-                  </div>
-                  <div class="portfolio-4-intro">
-                    <h4 class="portfolio-4-title">Medium Scene</h4>
-                    <div class="portfolio-4-descr">Branding, Design</div>
-                  </div>
-                </a>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>

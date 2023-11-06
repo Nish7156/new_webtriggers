@@ -39,12 +39,12 @@ function Newsletter() {
                   </button>
                 </div>
 
-                <div class="form-tip">
+                {/* <div class="form-tip">
                   <i class="icon-info size-16"></i>
                   By sending the form you agree to the
                   <a href="#">Terms & Conditions</a> and
                   <a href="#">Privacy Policy</a>.
-                </div>
+                </div> */}
 
                 <div
                   id="subscribe-result"

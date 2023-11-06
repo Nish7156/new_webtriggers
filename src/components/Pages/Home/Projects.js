@@ -1,6 +1,48 @@
 import React from "react";
 
 function Projects() {
+  const TeamList = [
+    {
+      id: 1,
+      name: "Nishant Shedage",
+      link: "https://personal-portfolio-brown-three.vercel.app/",
+      profile: "/images/banners/me.jpeg",
+      about:
+        "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
+      instaLink: "ff",
+      githubLink: ""
+    },
+    {
+      id: 2,
+      name: "Rahul Gupta",
+      link: "https://rahulgupta.web.app/",
+      profile: "/images/banners/Rahul_1.jpg",
+      about:
+        "A Highly Skilled Full-Stack Developer with Expertise in MERN and PERN Stacks and React Native Specializing in Building User-Friendly Web Applications and Comprehensive Solutions",
+      instaLink: "ff",
+      githubLink: "https://github.com/Rahul869g"
+    },
+    // {
+    //   id: 1,
+    //   name: "Nishant Shedage",
+    //   link: "https://personal-portfolio-brown-three.vercel.app/",
+    //   profile: "/images/banners/me.jpeg",
+    //   about:
+    //     "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
+    //   instaLink: "ff",
+    //   githubLink: ""
+    // },
+    // {
+    //   id: 1,
+    //   name: "Nishant Shedage",
+    //   link: "https://personal-portfolio-brown-three.vercel.app/",
+    //   profile: "/images/banners/me.jpeg",
+    //   about:
+    //     "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
+    //   instaLink: "ff",
+    //   githubLink: ""
+    // }
+  ];
   return (
     <>
       <section class="page-section bg-dark-1 light-content" id="team">
@@ -29,166 +71,66 @@ function Projects() {
             </div>
 
             <div class="col-xl-6 offset-xl-1">
-              <div class="row mb-n30 masonry">
-                <div class="col-sm-6 mb-30">
-                  <div class="team-1-item round">
-                    <h4 class="team-1-title">
-                      Thomas <br />
-                      Anderson
-                    </h4>
+              <div class="row mb-n30 masonry ">
+                {TeamList.map((data, index) => {
+                  return (
+                    <div
+                      key={data.id}
+                      class={` ${
+                        index == 1
+                          ? "col-sm-6 mb-30 mt-140 mt-xs-0 pt-140 pt-xs-0"
+                          : "col-sm-6 mb-30 mt-30"
+                      }`}
+                    >
+                      <a
+                        href={`${data.link}`}
+                        target="_blank"
+                        rel="noopener nofollow"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <div class="team-1-item round">
+                          <h4 class="team-1-title">{data.name}</h4>
 
-                    <div class="team-1-image">
-                      <img
-                        src="images/demo-strong/team/team-1.jpg"
-                        alt="Image Description"
-                      />
-                    </div>
+                          <div class="team-1-image">
+                            <img
+                              src={`${data.profile}`}
+                              alt="Image Description"
+                            />
+                          </div>
 
-                    <h5 class="team-1-role">Creative director</h5>
+                          <h5 class="team-1-role">Creative director</h5>
 
-                    <p class="team-1-descr">
-                      Sed eget ipsum vel urna viverra iaculis. Aenean ligula
-                      arcu, porta in scelerisque vehicula eget metus.
-                    </p>
+                          <p class="team-1-descr" style={{ textAlign: "left" }}>
+                            {data.about}
+                          </p>
 
-                    <div class="team-1-social-links">
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Facebook</div>
-                        <i class="fa-facebook-f"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Twitter</div>
-                        <i class="fa-twitter"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Behance</div>
-                        <i class="fa-behance"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 mb-30 mt-140 mt-xs-0 pt-140 pt-xs-0">
-                  <div class="team-1-item round">
-                    <h4 class="team-1-title">
-                      Lukas <br />
-                      Goodman
-                    </h4>
-
-                    <div class="team-1-image">
-                      <img
-                        src="images/demo-strong/team/team-2.jpg"
-                        alt="Image Description"
-                      />
-                    </div>
-
-                    <h5 class="team-1-role">Product designer</h5>
-
-                    <p class="team-1-descr">
-                      Etiam nec purus lacus curabitur facilisis dolor odio, in
-                      cursus sem viverra nec maximus pretium.
-                    </p>
-
-                    <div class="team-1-social-links">
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Facebook</div>
-                        <i class="fa-facebook-f"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Twitter</div>
-                        <i class="fa-twitter"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Behance</div>
-                        <i class="fa-behance"></i>
+                          <div class="team-1-social-links">
+                            {(data.instaLink || data.githubLink) && (
+                              <>
+                                <a
+                                  href={`${data.instaLink}`}
+                                  target="_blank"
+                                  rel="noopener nofollow"
+                                >
+                                  <div class="visually-hidden">Instagram</div>
+                                  <i class="fa-instagram"></i>
+                                </a>
+                                <a
+                                  href={`${data.githubLink}`}
+                                  target="_blank"
+                                  rel="noopener nofollow"
+                                >
+                                  <div class="visually-hidden">Github</div>
+                                  <i class="fa-github"></i>
+                                </a>
+                              </>
+                            )}
+                          </div>
+                        </div>
                       </a>
                     </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 mb-30">
-                  <div class="team-1-item round">
-                    <h4 class="team-1-title">
-                      Kelsie <br />
-                      Rogers
-                    </h4>
-
-                    <div class="team-1-image">
-                      <img
-                        src="images/demo-strong/team/team-3.jpg"
-                        alt="Image Description"
-                      />
-                    </div>
-
-                    <h5 class="team-1-role">Web engineer</h5>
-
-                    <p class="team-1-descr">
-                      Etiam at orli at tellus iaculis bibendum quis id ante
-                      proin posuere eros, eget blandit vestibulum vel.
-                    </p>
-
-                    <div class="team-1-social-links">
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Facebook</div>
-                        <i class="fa-facebook-f"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Twitter</div>
-                        <i class="fa-twitter"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Behance</div>
-                        <i class="fa-behance"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 mb-30">
-                  <div class="team-1-item round">
-                    <h4 class="team-1-title">
-                      Marta <br />
-                      Carlson
-                    </h4>
-
-                    <div class="team-1-image">
-                      <img
-                        src="images/demo-strong/team/team-4.jpg"
-                        alt="Image Description"
-                      />
-                    </div>
-
-                    <h5 class="team-1-role">UI/UX designer</h5>
-
-                    <p class="team-1-descr">
-                      Sed eget ipsum vel urna viverra iaculis. Aenean ligula
-                      arcu, porta in scelerisque vehicula eget metus.
-                    </p>
-
-                    <div class="team-1-social-links">
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Facebook</div>
-                        <i class="fa-facebook-f"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Twitter</div>
-                        <i class="fa-twitter"></i>
-                      </a>
-
-                      <a href="#" target="_blank" rel="noopener nofollow">
-                        <div class="visually-hidden">Behance</div>
-                        <i class="fa-behance"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
             </div>
           </div>

@@ -1,35 +1,38 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
 function Header() {
   const [isOpen, setisOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
   const HeaderMenus = [
-    {
-      id: 1,
-      title: "Home",
-      link: "",
-    },
-    {
-      id: 2,
-      title: "About",
-      link: "",
-    },
-    {
-      id: 3,
-      title: "Services",
-      link: "",
-    },
-    {
-      id: 4,
-      title: "Portfolio",
-      link: "",
-    },
-    {
-      id: 5,
-      title: "Contact",
-      link: "",
-    },
+    { id: 1, title: "Home", link: "home" },
+    { id: 2, title: "About", link: "about" },
+    { id: 3, title: "Services", link: "services" },
+    { id: 4, title: "Portfolio", link: "portfolio" },
   ];
-  let isActive = true;
+  const handleSetActive = (to) => {
+    console.log(to);
+    setActiveSection(to);
+  };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+    setisOpen(false);
+  };
+
+  const scrollToSection = (link) => {
+    scroller.scrollTo(link, {
+      duration: 500,
+      delay: 100,
+      smooth: true,
+      offset: 60,
+      spy: true,
+      activeClass: "active",
+      onSetActive: handleSetActive,
+    });
+    setisOpen(false);
+  };
   return (
     <>
       <nav class="main-nav dark dark-mode transparent stick-fixed wow-menubar wch-unset">
@@ -62,21 +65,28 @@ function Header() {
             <ul class="clearlist local-scroll">
               {HeaderMenus.map((data, index) => {
                 return (
-                  <li key={data.id}>
-                    <a
-                      href={`${data.link}`}
-                      className={isActive && index === 0 ? "active" : ""}
+                  <li key={index}>
+                    <Link
+                      to={data.link}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      onClick={() => scrollToSection(data.link)}
+                      className={activeSection === data.link ? "active" : ""}
                     >
                       {data.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
+              <li>
+                <a href="/contact-us">Contact-us</a>
+              </li>
             </ul>
 
             <ul class="items-end clearlist local-scroll">
               <li>
-                <a href="strong-contact-dark.html" class="opacity-1 no-hover">
+                <a href="/contact-us" class="opacity-1 no-hover">
                   <span class="link-hover-anim" data-link-animate="y">
                     <span class="icon-ellipse me-1"></span> Get Touch
                   </span>
