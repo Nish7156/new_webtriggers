@@ -13,7 +13,7 @@ function Projects() {
       githubLink: ""
     },
     {
-      id: 1,
+      id: 2,
       name: "Rahul Gupta",
       link: "https://rahulgupta.web.app/",
       profile: "/images/banners/Rahul_1.jpg",
@@ -22,26 +22,26 @@ function Projects() {
       instaLink: "ff",
       githubLink: "https://github.com/Rahul869g"
     },
-    {
-      id: 1,
-      name: "Nishant Shedage",
-      link: "https://personal-portfolio-brown-three.vercel.app/",
-      profile: "/images/banners/me.jpeg",
-      about:
-        "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
-      instaLink: "ff",
-      githubLink: ""
-    },
-    {
-      id: 1,
-      name: "Nishant Shedage",
-      link: "https://personal-portfolio-brown-three.vercel.app/",
-      profile: "/images/banners/me.jpeg",
-      about:
-        "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
-      instaLink: "ff",
-      githubLink: ""
-    }
+    // {
+    //   id: 1,
+    //   name: "Nishant Shedage",
+    //   link: "https://personal-portfolio-brown-three.vercel.app/",
+    //   profile: "/images/banners/me.jpeg",
+    //   about:
+    //     "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
+    //   instaLink: "ff",
+    //   githubLink: ""
+    // },
+    // {
+    //   id: 1,
+    //   name: "Nishant Shedage",
+    //   link: "https://personal-portfolio-brown-three.vercel.app/",
+    //   profile: "/images/banners/me.jpeg",
+    //   about:
+    //     "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
+    //   instaLink: "ff",
+    //   githubLink: ""
+    // }
   ];
   return (
     <>
