@@ -10,7 +10,17 @@ function Projects() {
       about:
         "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
       instaLink: "ff",
-      twitterLink: "",
+      githubLink: ""
+    },
+    {
+      id: 1,
+      name: "Rahul Gupta",
+      link: "https://rahulgupta.web.app/",
+      profile: "/images/banners/Rahul_1.jpg",
+      about:
+        "A Highly Skilled Full-Stack Developer with Expertise in MERN and PERN Stacks and React Native Specializing in Building User-Friendly Web Applications and Comprehensive Solutions",
+      instaLink: "ff",
+      githubLink: "https://github.com/Rahul869g"
     },
     {
       id: 1,
@@ -20,7 +30,7 @@ function Projects() {
       about:
         "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
       instaLink: "ff",
-      twitterLink: "",
+      githubLink: ""
     },
     {
       id: 1,
@@ -30,18 +40,8 @@ function Projects() {
       about:
         "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
       instaLink: "ff",
-      twitterLink: "",
-    },
-    {
-      id: 1,
-      name: "Nishant Shedage",
-      link: "https://personal-portfolio-brown-three.vercel.app/",
-      profile: "/images/banners/me.jpeg",
-      about:
-        "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
-      instaLink: "ff",
-      twitterLink: "",
-    },
+      githubLink: ""
+    }
   ];
   return (
     <>
@@ -71,7 +71,7 @@ function Projects() {
             </div>
 
             <div class="col-xl-6 offset-xl-1">
-              <div class="row mb-n30 masonry">
+              <div class="row mb-n30 masonry ">
                 {TeamList.map((data, index) => {
                   return (
                     <div
@@ -79,7 +79,7 @@ function Projects() {
                       class={` ${
                         index == 1
                           ? "col-sm-6 mb-30 mt-140 mt-xs-0 pt-140 pt-xs-0"
-                          : "col-sm-6 mb-30"
+                          : "col-sm-6 mb-30 mt-30"
                       }`}
                     >
                       <a
@@ -100,24 +100,31 @@ function Projects() {
 
                           <h5 class="team-1-role">Creative director</h5>
 
-                          <p class="team-1-descr" style={{textAlign:"left"}}>{data.about}</p>
+                          <p class="team-1-descr" style={{ textAlign: "left" }}>
+                            {data.about}
+                          </p>
 
                           <div class="team-1-social-links">
-                            {data.instaLink && (
-                              <a
-                                href={`${data.instaLink}`}
-                                target="_blank"
-                                rel="noopener nofollow"
-                              >
-                                <div class="visually-hidden">Instagram</div>
-                                <i class="fa-instagram"></i>
-                              </a>
+                            {(data.instaLink || data.githubLink) && (
+                              <>
+                                <a
+                                  href={`${data.instaLink}`}
+                                  target="_blank"
+                                  rel="noopener nofollow"
+                                >
+                                  <div class="visually-hidden">Instagram</div>
+                                  <i class="fa-instagram"></i>
+                                </a>
+                                <a
+                                  href={`${data.githubLink}`}
+                                  target="_blank"
+                                  rel="noopener nofollow"
+                                >
+                                  <div class="visually-hidden">Github</div>
+                                  <i class="fa-github"></i>
+                                </a>
+                              </>
                             )}
-
-                            <a href="#" target="_blank" rel="noopener nofollow">
-                              <div class="visually-hidden">Twitter</div>
-                              <i class="fa-twitter"></i>
-                            </a>
                           </div>
                         </div>
                       </a>

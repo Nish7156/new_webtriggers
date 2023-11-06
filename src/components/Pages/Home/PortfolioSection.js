@@ -2,24 +2,42 @@ import React from "react";
 
 function PortfolioSection() {
   const ProjectsList = [
-    {
-      id: 1,
-      title: "Toopgeek",
-      category: "Branding, UI/UX Design",
-      img: "/images/projects/topgeekai.jpg",
-    },
-    {
-      id: 2,
-      title: "Kofuku",
-      category: "Branding, UI/UX Design",
-      img: "/images/projects/kofuku.jpg",
-    },
+    // {
+    //   id: 1,
+    //   title: "Toopgeek",
+    //   category: "Branding, UI/UX Design",
+    //   img: "/images/projects/topgeekai.jpg",
+    // },
+    // {
+    //   id: 2,
+    //   title: "Kofuku",
+    //   category: "Branding, UI/UX Design",
+    //   img: "/images/projects/kofuku.jpg",
+    // },
     {
       id: 3,
       title: "RCSPL",
-      category: "Branding, UI/UX Design",
-      img: "/images/projects/rcspl.png",
+      category: "Web Development",
+      img: "/images/projects/rcspl.png"
     },
+    {
+      id: 4,
+      title: "YT Playlist Length Calculator",
+      category: "Web App Development",
+      img: "/images/projects/YT Playlist Length Calculator.png"
+    },
+    {
+      id: 5,
+      title: "Food Recipe App",
+      category: "Mobile App Design & Development",
+      img: "/images/projects/Food Recipe App_React Native.png"
+    },
+    {
+      id: 5,
+      title: "Links Sharing App",
+      category: "Web App Design & Development",
+      img: "/images/projects/links-sharing-app.png"
+    }
   ];
   return (
     <>
@@ -47,8 +65,16 @@ function PortfolioSection() {
                 return (
                   <div key={data.id} class="portfolio-4-item">
                     <a href="/contact-us">
-                      <div class="portfolio-4-image">
-                        <img src={`${data.img}`} alt="Image Description" />
+                      <div class="portfolio-4-image ">
+                        <img
+                          src={`${data.img}`}
+                          style={{
+                            width: "100%",
+                            height: "400px",
+                            objectFit: "cover"
+                          }}
+                          alt="Image Description"
+                        />
                       </div>
                       <div class="portfolio-4-intro">
                         <h4 class="portfolio-4-title">{data.title}</h4>
