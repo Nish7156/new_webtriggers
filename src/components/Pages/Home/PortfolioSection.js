@@ -14,12 +14,12 @@ function PortfolioSection() {
     //   category: "Branding, UI/UX Design",
     //   img: "/images/projects/kofuku.jpg",
     // },
-    {
-      id: 3,
-      title: "RCSPL",
-      category: "Web Development",
-      img: "/images/projects/rcspl.png"
-    },
+    // {
+    //   id: 3,
+    //   title: "RCSPL",
+    //   category: "Web Development",
+    //   img: "/images/projects/rcspl.png"
+    // },
     {
       id: 4,
       title: "YT Playlist Length Calculator",
