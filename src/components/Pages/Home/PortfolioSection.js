@@ -14,12 +14,20 @@ function PortfolioSection() {
     //   category: "Branding, UI/UX Design",
     //   img: "/images/projects/kofuku.jpg",
     // },
-    // {
-    //   id: 3,
-    //   title: "RCSPL",
-    //   category: "Web Development",
-    //   img: "/images/projects/rcspl.png"
-    // },
+    {
+      id: 2,
+      title: "Tech Of India",
+      category: "Web Development",
+      img: "/images/projects/tech-of.png",
+      link:'https://techofindia.in'
+    },
+    {
+      id: 3,
+      title: "RCSPL",
+      category: "Web Development",
+      img: "/images/projects/rcspl.png",
+      link:'https://project1-weld-beta.vercel.app'
+    },
     {
       id: 4,
       title: "YT Playlist Length Calculator",
@@ -64,7 +72,7 @@ function PortfolioSection() {
               {ProjectsList.map((data) => {
                 return (
                   <div key={data.id} class="portfolio-4-item">
-                    <a href="/contact-us">
+                    <a href={`${data.link}`} target="_blank">
                       <div class="portfolio-4-image ">
                         <img
                           src={`${data.img}`}
