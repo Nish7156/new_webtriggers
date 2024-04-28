@@ -1,6 +1,20 @@
 import React from "react";
 
 function ContactUs() {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+  //     .then(
+  //       (result) => {
+  //         alert("Message sent successfully");
+  //       },
+  //       (error) => {
+  //         console.error("Error sending message:", error);
+  //         alert("Failed to send message");
+  //       }
+  //     );
+  // };
   return (
     <>
       <section class="page-section bg-dark-1 light-content" id="contact-us">
@@ -78,28 +92,6 @@ function ContactUs() {
                     </div>
                   </div>
                 </div>
-
-                {/* <div class="contact-2-item">
-                  <div class="contact-2-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="64"
-                      viewBox="0 0 40 64"
-                      aria-hidden="true"
-                    >
-                      <path d="M20 4c11 0 20 8.875 20 19.625 0 14.75-20 36.375-20 36.375s-20-21.625-20-36.375c0-10.75 9-19.625 20-19.625zM20 30.625c4 0 7.125-3.125 7.125-7s-3.125-7-7.125-7-7.125 3.125-7.125 7 3.125 7 7.125 7z"></path>
-                    </svg>
-                  </div>
-                  <div class="contat-2-intro">
-                    <h4 class="contact-2-title">
-                      Visit <span class="font-alt">us</span>
-                    </h4>
-                    <div class="contact-2-text">
-                      <a href="#">121 King Street Melbourne, 3000, Australia</a>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </div>
 
@@ -144,19 +136,14 @@ function ContactUs() {
                     name="message"
                     id="message"
                     class="input-lg round form-control"
-                    style={{ height: "130px" }}
+                    style={{ height: "130px", color: "white" }}
                     placeholder="Enter your message"
                   ></textarea>
                 </div>
 
                 <div class="row">
                   <div class="col-sm-6">
-                    <div class="form-tip pt-20 pt-sm-0">
-                      {/* <i class="icon-info size-16"></i>
-                      All the fields are required. By sending the form you agree
-                      to the <a href="#">Terms & Conditions</a> and
-                      <a href="#">Privacy Policy</a>. */}
-                    </div>
+                    <div class="form-tip pt-20 pt-sm-0"></div>
                   </div>
                   <div class="col-sm-6">
                     <div class="text-end pt-20">
