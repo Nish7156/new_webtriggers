@@ -8,11 +8,11 @@ function Footer() {
           <div class="page-section">
             <div class="row">
               <div class="col-lg-3 text-center text-lg-start mb-md-50">
-                © Webtriggers 2023.
+                © Webtriggers 2024.
               </div>
 
               <div class="col-lg-6 footer-social-links text-center mb-md-40">
-                <a
+                {/* <a
                   href="#"
                   title="Facebook"
                   rel="noopener nofollow"
@@ -29,9 +29,9 @@ function Footer() {
                 >
                   <span class="visually-hidden">Youtube</span>
                   <i class="fa-youtube"></i>
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="https://www.instagram.com/webtriggers11"
                   title="Instagram"
                   rel="noopener nofollow"
                   target="_blank"
@@ -39,7 +39,7 @@ function Footer() {
                   <span class="visually-hidden">Instagram</span>
                   <i class="fa-instagram"></i>
                 </a>
-                <a
+                {/* <a
                   href="#"
                   title="Behance"
                   rel="noopener nofollow"
@@ -56,7 +56,7 @@ function Footer() {
                 >
                   <span class="visually-hidden">Dribbble</span>
                   <i class="fa-dribbble"></i>
-                </a>
+                </a> */}
               </div>
 
               <div class="col-lg-3 text-center text-lg-end local-scroll">

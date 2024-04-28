@@ -3,7 +3,7 @@ import React from "react";
 function ContactUs() {
   return (
     <>
-      <section class="page-section bg-dark-1 light-content" id="contact">
+      <section class="page-section bg-dark-1 light-content" id="contact-us">
         <div class="container">
           <div class="row mb-90 mb-sm-50">
             <div class="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
@@ -72,14 +72,14 @@ function ContactUs() {
                       Say <span class="font-alt">hello</span>
                     </h4>
                     <div class="contact-2-text">
-                      <a href="mailto:info@bestlooker.pro">
-                        info@bestlooker.pro
+                      <a href="mailto:webtriggers11@gmail.com">
+                        webtriggers11@gmail.com
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="contact-2-item">
+                {/* <div class="contact-2-item">
                   <div class="contact-2-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ function ContactUs() {
                       <a href="#">121 King Street Melbourne, 3000, Australia</a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
