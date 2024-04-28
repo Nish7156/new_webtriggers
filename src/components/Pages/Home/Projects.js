@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
 function Projects() {
   const TeamList = [
@@ -10,7 +11,7 @@ function Projects() {
       about:
         "I'm a full-stack developer skilled in HTML, CSS, JavaScript, PHP, and Python, creating user-friendly web applications with end-to-end solutions.",
       instaLink: "ff",
-      githubLink: ""
+      githubLink: "",
     },
     {
       id: 2,
@@ -20,7 +21,7 @@ function Projects() {
       about:
         "A Highly Skilled Full-Stack Developer with Expertise in MERN and PERN Stacks and React Native Specializing in Building User-Friendly Web Applications and Comprehensive Solutions",
       instaLink: "ff",
-      githubLink: "https://github.com/Rahul869g"
+      githubLink: "https://github.com/Rahul869g",
     },
     // {
     //   id: 1,
@@ -60,12 +61,16 @@ function Projects() {
                   consequat lectus nec nunc faucibus.
                 </p>
                 <div class="local-scroll">
-                  <a
-                    href="strong-contact-dark.html"
-                    class="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
+                  <Link
+                    to={"contact-us"}
+                    spy={false}
+                    smooth={true}
+                    duration={1000}
                   >
-                    <span>Join our Team</span>
-                  </a>
+                    <div class="btn btn-mod btn-w btn-large btn-round btn-hover-anim">
+                      <span>Join our Team</span>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

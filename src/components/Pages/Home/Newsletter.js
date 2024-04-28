@@ -5,14 +5,16 @@ function Newsletter() {
     <>
       <section
         class="page-section bg-dark-1 light-content"
-      style={{backgroundImage:'url(images/full-width-images/section-bg-2.jpg)'}}
+        style={{
+          backgroundImage: "url(images/full-width-images/section-bg-2.jpg)",
+        }}
       >
         <div class="container position-relative">
           <div class="row">
             <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 wow fadeInUp">
               <h2 class="section-title text-center mb-40">
-                Looking for{' '}
-                <span class="font-alt">exclusive creative</span> content?
+                Looking for <span class="font-alt">exclusive creative</span>{" "}
+                content?
               </h2>
 
               <form id="mailchimp" class="form newsletter-strong">
@@ -29,6 +31,7 @@ function Newsletter() {
                     pattern=".{5,100}"
                     required
                     aria-required="true"
+                    style={{ color: "white" }}
                   />
                   <button
                     type="submit"

@@ -1,42 +1,21 @@
-import "./App.css";
-import HeroSection from "./components/Pages/Home/HeroSection";
-import AboutSection from "./components/Pages/Home/AboutSection";
-import Projects from "./components/Pages/Home/Projects";
-import ServicesSection from "./components/Pages/Home/ServicesSection";
-import SplitSection from "./components/Pages/Home/SplitSection";
-import PortfolioSection from "./components/Pages/Home/PortfolioSection";
-import MarqueeText from "./components/Pages/Home/MarqueeText";
-import Testimonials from "./components/Pages/Home/Testimonials";
-import NewsSection from "./components/Pages/Home/NewsSection";
-import Newsletter from "./components/Pages/Home/Newsletter";
-import ContactUs from "./components/Pages/Home/ContactUs";
-import MovingText from "./components/Pages/Home/MovingText";
-import Feat from "./components/Pages/Home/Feat";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./Home";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <>
-      <HeroSection />
-      <AboutSection />
-      <hr class="mt-0 mb-0 white" />
-      <Projects />
-      <MovingText />
-      <hr class="mt-0 mb-0 white" />
-      <ServicesSection />
-      <hr class="mt-0 mb-0 white" />
-      <Feat />
-      <SplitSection />
-      <PortfolioSection />
-      <hr class="mt-0 mb-0 white" />
-      <MarqueeText />
-      <hr class="mt-0 mb-0 white" />
-
-      {/* <Testimonials /> */}
-      {/* <hr class="mt-0 mb-0 white" />
-      <NewsSection /> */}
-      <Newsletter />
-      <ContactUs />
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/blog" exact element={<BlogList />} />
+            <Route path="/blog/:id" element={<BlogPost />} /> */}
+          </Route>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

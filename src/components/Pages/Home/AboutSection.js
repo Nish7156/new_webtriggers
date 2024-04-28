@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
 function AboutSection() {
   return (
@@ -55,15 +56,19 @@ function AboutSection() {
               </div>
 
               <div class="local-scroll wow fadeInUp" data-wow-offset="0">
-                <a
-                  href="strong-about-dark.html"
-                  class="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
+                <Link
+                  to={"contact-us"}
+                  spy={false}
+                  smooth={true}
+                  duration={1000}
                 >
-                  <span>
-                    Learn More
-                    <span class="visually-hidden">About Us</span>
-                  </span>
-                </a>
+                  <div class="btn btn-mod btn-w btn-large btn-round btn-hover-anim">
+                    <span>
+                      Learn More
+                      <span class="visually-hidden">About Us</span>
+                    </span>
+                  </div>
+                </Link>
               </div>
             </div>
 
