@@ -10,11 +10,13 @@ import Newsletter from "./components/Pages/Home/Newsletter";
 import ContactUs from "./components/Pages/Home/ContactUs";
 import MovingText from "./components/Pages/Home/MovingText";
 import Feat from "./components/Pages/Home/Feat";
+import MovingYearText from "./components/Pages/Home/MovingYearText";
 
 function Home() {
   return (
     <>
       <HeroSection />
+      <MovingYearText/>
       <AboutSection />
       <hr class="mt-0 mb-0 white" />
       <Projects />

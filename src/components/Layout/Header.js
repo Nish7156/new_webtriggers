@@ -52,6 +52,7 @@ function Header() {
                       smooth={true}
                       duration={500}
                       className={activeSection === data.link ? "active" : ""}
+                      onClick={()=>setisOpen(false)}
                     >
                       {data.title}
                     </Link>
@@ -62,7 +63,7 @@ function Header() {
 
             <ul class="items-end clearlist local-scroll">
               <li>
-                <Link to={"contact-us"} spy={true} smooth={true} duration={500}>
+                <Link to={"contact-us"} spy={true} smooth={true} duration={500}  onClick={()=>setisOpen(false)}>
                   <div class="opacity-1 no-hover">
                     <span class="link-hover-anim" data-link-animate="y">
                       <span class="icon-ellipse me-1"></span> Get Touch
