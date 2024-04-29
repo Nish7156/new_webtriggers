@@ -2,17 +2,18 @@
 import "./App.css";
 import React from "react";
 import { useParams } from "react-router-dom";
+import BlogSingleDetails from "./components/Pages/Blogs/BlogDetails/BlogSingleDetails";
+import BlogsList from "./components/Pages/Blogs/BlogsList";
 
-function BlogPost() {
+function BlogSingle() {
   const { id } = useParams(); // Get the blog post ID from URL params
   console.log(id);
 
   return (
-    <div>
-      <h2>Blog Post {id}</h2>
-      {/* Fetch and display content for the specified blog post */}
-    </div>
+    <>
+    <BlogSingleDetails/>
+    </>
   );
 }
 
-export default BlogPost;
+export default BlogSingle;

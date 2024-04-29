@@ -1,13 +1,13 @@
 // BlogList.js
 import React from "react";
 import AboutSection from "./components/Pages/Home/AboutSection";
+import BlogsList from "./components/Pages/Blogs/BlogsList";
 
 function BlogList() {
   return (
-    <div>
-      <h2>Blog Posts</h2>
-      {/* Render a list of blog posts */}
-    </div>
+    <>
+    <BlogsList/>
+    </>
   );
 }
 
