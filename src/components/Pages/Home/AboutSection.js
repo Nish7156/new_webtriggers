@@ -57,6 +57,7 @@ function AboutSection() {
 
               <div class="local-scroll wow fadeInUp" data-wow-offset="0">
                 <Link
+                style={{cursor:'pointer'}}
                   to={"contact-us"}
                   spy={false}
                   smooth={true}

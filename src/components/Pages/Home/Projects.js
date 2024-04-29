@@ -62,6 +62,7 @@ function Projects() {
                 </p>
                 <div class="local-scroll">
                   <Link
+                  style={{cursor:'pointer'}}
                     to={"contact-us"}
                     spy={false}
                     smooth={true}
