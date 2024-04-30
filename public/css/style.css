@@ -5262,11 +5262,11 @@ a.logo:hover{
 .marquee-animation{   
     animation: marquee-animation 37s linear infinite;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .marquee-animation {
         animation: none !important;
     }
-}
+} */
 @keyframes marquee-animation {
   0%{
       transform: translate3d(0,0,0);
@@ -5279,11 +5279,11 @@ a.logo:hover{
     animation: marquee-animation-1 80s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .marquee-animation-1 {
         animation: none !important;
     }
-}
+} */
 @keyframes marquee-animation-1 {
   0%{
       transform: translate3d(0,0,0);
@@ -5296,11 +5296,11 @@ a.logo:hover{
     animation: marquee-animation-1a 50s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .marquee-animation-1a {
         animation: none !important;
     }
-}
+} */
 @keyframes marquee-animation-1a {
   0%{
       transform: translate3d(0,0,0);
@@ -5313,11 +5313,11 @@ a.logo:hover{
     animation: marquee-animation-2 80s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .marquee-animation-2 {
         animation: none !important;
     }
-}
+} */
 @keyframes marquee-animation-2 {
   0%{
       transform: translate3d(0,0,0);
@@ -5330,11 +5330,11 @@ a.logo:hover{
     animation: marquee-animation-2a 50s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .marquee-animation-2a {
         animation: none !important;
     }
-}
+} */
 @keyframes marquee-animation-2a {
   0%{
       transform: translate3d(0,0,0);
@@ -5347,11 +5347,11 @@ a.logo:hover{
     animation: marquee-animation-3 36s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .marquee-animation-3 {
         animation: none !important;
     }
-}
+} */
 @keyframes marquee-animation-3 {
   0%{
       transform: translate3d(0,0,0);

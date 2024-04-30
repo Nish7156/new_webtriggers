@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Link, animateScroll as scroll, scroller } from "react-scroll";
 
 function Header() {
@@ -6,11 +7,12 @@ function Header() {
   const [activeSection, setActiveSection] = useState(null);
 
   const HeaderMenus = [
-    { id: 1, title: "Home", link: "home" },
-    { id: 2, title: "About", link: "about" },
-    { id: 3, title: "Services", link: "services" },
-    { id: 4, title: "Portfolio", link: "portfolio" },
-    { id: 5, title: "Contact Us", link: "contact-us" },
+    { id: 1, title: "Home", link: "/" ,islink:true},
+    { id: 2, title: "About", link: "about" ,islink:false},
+    { id: 3, title: "Services", link: "services",islink:false },
+    { id: 4, title: "Portfolio", link: "portfolio",islink:false },
+    { id: 5, title: "Blogs", link: "blogs" ,islink:true},
+    { id: 6, title: "Contact Us", link: "contact-us",islink:false },
   ];
 
   return (
@@ -46,7 +48,9 @@ function Header() {
               {HeaderMenus.map((data, index) => {
                 return (
                   <li key={index}>
-                    <Link
+                   {data.islink ? <NavLink to={`${data.link}`}>
+                    {data.title}
+                   </NavLink> : <Link
                       to={data.link}
                       spy={true}
                       smooth={true}
@@ -56,7 +60,7 @@ function Header() {
                       style={{cursor:'pointer'}}
                     >
                       {data.title}
-                    </Link>
+                    </Link>}
                   </li>
                 );
               })}
