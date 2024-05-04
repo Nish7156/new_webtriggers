@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    if (name === "email") {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(value)) {
+      }
+    }
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
   // const handleSubmit = (e) => {
   //   e.preventDefault();
   //   emailjs
@@ -15,6 +37,25 @@ function ContactUs() {
   //       }
   //     );
   // };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      alert("Message sent successfully");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      }); 
+    }, 2000);
+  };
+
+  const isFormValid = () => {
+    return formData.name.trim() !== "" && formData.email.trim() !== "";
+  };
   return (
     <>
       <section class="page-section bg-dark-1 light-content" id="contact-us">
@@ -110,6 +151,8 @@ function ContactUs() {
                         pattern=".{3,100}"
                         required
                         aria-required="true"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -125,6 +168,8 @@ function ContactUs() {
                         pattern=".{5,100}"
                         required
                         aria-required="true"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -138,6 +183,8 @@ function ContactUs() {
                     class="input-lg round form-control"
                     style={{ height: "130px", color: "white" }}
                     placeholder="Enter your message"
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
 
@@ -147,14 +194,32 @@ function ContactUs() {
                   </div>
                   <div class="col-sm-6">
                     <div class="text-end pt-20">
-                      <button
-                        type="submit"
-                        id="submit_btn"
-                        aria-controls="result"
-                        class="submit_btn btn btn-mod btn-w btn-large btn-round btn-hover-anim align-middle"
-                      >
-                        <span> Send Message </span>
-                      </button>
+                      {isLoading ? (
+                        <button
+                          type="button"
+                          disabled
+                          className="submit_btn btn btn-mod btn-w btn-large btn-round btn-hover-anim align-middle"
+                        >
+                          <span
+                            className="spinner-border spinner-border-sm"
+                            role="status"
+                            aria-hidden="true"
+                            style={{ marginRight: "8px" }}
+                          ></span>
+                          Sending...
+                        </button>
+                      ) : (
+                        <button
+                          onClick={handleSubmit}
+                          disabled={!isFormValid()}
+                          type="submit"
+                          id="submit_btn"
+                          aria-controls="result"
+                          className="submit_btn btn btn-mod btn-w btn-large btn-round btn-hover-anim align-middle"
+                        >
+                          <span>Send Message</span>
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
