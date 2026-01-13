@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Webtriggers - Web Development Portfolio
+
+This project is a React-based portfolio website for Webtriggers, featuring web development services, projects, and blog functionality.
+
+## Features
+
+- **Home Page**: Showcase of services, portfolio, and contact information
+- **Blog System**: Blog listing and individual blog post pages
+- **Terms of Service**: Comprehensive terms and conditions page
+- **Refund Policy**: Detailed refund policy page
+- **API Gateway Integration**: Configured to connect with other projects via API gateway
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +80,50 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## API Gateway Configuration
+
+This project includes an API gateway setup for connecting to other backend services. See [GATEWAY_CONFIG.md](./GATEWAY_CONFIG.md) for detailed configuration instructions.
+
+### Quick Setup
+
+1. Create a `.env` file in the root directory:
+```env
+REACT_APP_API_GATEWAY_URL=http://localhost:3001
+```
+
+2. Use the API utility functions:
+```javascript
+import api from './utils/api';
+
+// GET request
+const data = await api.get('/endpoint');
+
+// POST request
+const result = await api.post('/endpoint', { data });
+```
+
+## Pages
+
+- `/` - Home page
+- `/blogs` - Blog listing
+- `/blog/:id` - Individual blog post
+- `/terms` - Terms of Service
+- `/refund` - Refund Policy
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Layout/          # Header and Footer components
+│   └── Pages/
+│       ├── Home/        # Home page sections
+│       ├── Blogs/       # Blog-related components
+│       ├── Terms/       # Terms of Service page
+│       └── Refund/      # Refund Policy page
+├── utils/
+│   ├── api.js          # API gateway utility functions
+│   └── apiExample.js   # Example API usage
+└── setupProxy.js       # Development proxy configuration
+```
