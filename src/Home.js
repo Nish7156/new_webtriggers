@@ -40,7 +40,7 @@ function Home() {
       <Newsletter />
 
       <SplitSection />
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
       <hr class="mt-0 mb-0 white" />
       <MarqueeText />
       <hr class="mt-0 mb-0 white" />

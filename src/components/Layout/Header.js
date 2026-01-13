@@ -10,7 +10,7 @@ function Header() {
     { id: 1, title: "Home", link: "/" ,islink:true},
     { id: 2, title: "About", link: "about" ,islink:false},
     { id: 3, title: "Services", link: "services",islink:false },
-    { id: 4, title: "Portfolio", link: "portfolio",islink:false },
+    // { id: 4, title: "Portfolio", link: "portfolio",islink:false },
     // { id: 5, title: "Blogs", link: "blogs" ,islink:true},
     { id: 6, title: "Contact Us", link: "contact-us",islink:false },
   ];
