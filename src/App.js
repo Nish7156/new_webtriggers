@@ -6,6 +6,7 @@ import BlogList from './BlogList';
 import BlogPost from './BlogPost';
 import Terms from './components/Pages/Terms/Terms';
 import Refund from './components/Pages/Refund/Refund';
+import Privacy from './components/Pages/Privacy/Privacy';
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/refund" element={<Refund />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Route>
         </Routes>
       </Layout>

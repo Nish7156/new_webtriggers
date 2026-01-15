@@ -20,7 +20,8 @@ function Footer() {
                 © Webtriggers 2024.
                 <div class="small mt-10">
                   <NavLink to="/terms" className="text-white opacity-75 me-3" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>Terms & Conditions</NavLink>
-                  <NavLink to="/refund" className="text-white opacity-75" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>Refund Policy</NavLink>
+                  <NavLink to="/refund" className="text-white opacity-75 me-3" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>Refund Policy</NavLink>
+                  <NavLink to="/privacy" className="text-white opacity-75" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>Privacy Policy</NavLink>
                 </div>
               </div>
 
@@ -80,8 +81,12 @@ function Footer() {
                 Terms & Conditions
               </NavLink>
               <span className="text-white opacity-50">|</span>
-              <NavLink to="/refund" className="text-white opacity-75 ms-2" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>
+              <NavLink to="/refund" className="text-white opacity-75 ms-2 me-2" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>
                 Refund Policy
+              </NavLink>
+              <span className="text-white opacity-50">|</span>
+              <NavLink to="/privacy" className="text-white opacity-75 ms-2" style={{ textDecoration: 'none' }} onClick={handleLinkClick}>
+                Privacy Policy
               </NavLink>
             </div>
           </div>
