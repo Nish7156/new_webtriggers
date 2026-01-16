@@ -40,7 +40,7 @@ function SplitSection() {
               data-rellax-speed="0.5"
               data-rellax-percentage="0.5"
             >
-              <img src="images/banners/ai-3.jpg" alt="Image Description" />
+              <img src="images/banners/ai-3.jpg" alt="Creative services" />
             </div>
           </div>
         </div>

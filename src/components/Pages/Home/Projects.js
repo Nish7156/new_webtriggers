@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Projects() {
   const TeamList = [
@@ -83,7 +83,7 @@ function Projects() {
                     <div
                       key={data.id}
                       class={` ${
-                        index == 1
+                        index === 1
                           ? "col-sm-6 mb-30 mt-140 mt-xs-0 pt-140 pt-xs-0"
                           : "col-sm-6 mb-30 mt-30"
                       }`}
@@ -91,7 +91,7 @@ function Projects() {
                       <a
                         href={`${data.link}`}
                         target="_blank"
-                        rel="noopener nofollow"
+                        rel="noopener noreferrer nofollow"
                         style={{ textDecoration: "none" }}
                       >
                         <div class="team-1-item round">
@@ -100,7 +100,7 @@ function Projects() {
                           <div class="team-1-image">
                             <img
                               src={`${data.profile}`}
-                              alt="Image Description"
+                              alt={`${data.name} profile`}
                             />
                           </div>
 
@@ -116,7 +116,7 @@ function Projects() {
                                 <a
                                   href={`${data.instaLink}`}
                                   target="_blank"
-                                  rel="noopener nofollow"
+                                  rel="noopener noreferrer nofollow"
                                 >
                                   <div class="visually-hidden">Instagram</div>
                                   <i class="fa-instagram"></i>
@@ -124,7 +124,7 @@ function Projects() {
                                 <a
                                   href={`${data.githubLink}`}
                                   target="_blank"
-                                  rel="noopener nofollow"
+                                  rel="noopener noreferrer nofollow"
                                 >
                                   <div class="visually-hidden">Github</div>
                                   <i class="fa-github"></i>
