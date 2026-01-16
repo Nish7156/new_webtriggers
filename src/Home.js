@@ -31,7 +31,7 @@ function Home() {
       <MovingYearText />
       <AboutSection />
       <hr class="mt-0 mb-0 white" />
-      <Projects />
+      {/* <Projects /> */}
       <MovingText />
       <hr class="mt-0 mb-0 white" />
       <ServicesSection />
