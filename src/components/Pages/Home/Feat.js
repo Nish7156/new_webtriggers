@@ -72,7 +72,7 @@ function Feat() {
       <div className="split-image-left">
         <img
           src="images/banners/uiux-1.jpg"
-          alt="Image Description"
+          alt=""
         />
         {/* Circle Text */}
         <div className="position-absolute bottom-0 start-0 ps-4 pb-4 d-none d-sm-block">
@@ -80,7 +80,7 @@ function Feat() {
             src="images/demo-strong/circle-text.svg"
             width={138}
             height={138}
-            alt="Image Description"
+            alt=""
           />
         </div>
         {/* End Circle Text */}

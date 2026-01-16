@@ -14,7 +14,7 @@ function BlogContent() {
                   <div className="mb-40 mb-xs-30">
                     <img
                       src="/images/demo-bold/portfolio/4.jpg"
-                      alt="Image Description"
+                      alt=""
                     />
                   </div>
                   <p>
@@ -47,7 +47,7 @@ function BlogContent() {
                   </blockquote>
                   <p>
                     Praesent ultricies ut ipsum non laoreet. Nunc ac
-                    <a href="#">ultricies</a> leo. Nulla ac ultrices arcu.
+                    <span>ultricies</span> leo. Nulla ac ultrices arcu.
                     Nullam adipiscing lacus in consectetur posuere. Nunc
                     malesuada tellus turpis, ac pretium orci molestie vel. Morbi
                     lacus massa, euismod ut turpis molestie, tristique sodales
@@ -74,14 +74,14 @@ function BlogContent() {
 
               {/* Prev/Next Post */}
               <div className="clearfix mt-40">
-                <a href="#" className="blog-item-more left">
+                <button type="button" className="blog-item-more left" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>
                   <i className="mi-chevron-left" />
                   &nbsp;Prev post
-                </a>
-                <a href="#" className="blog-item-more right">
+                </button>
+                <button type="button" className="blog-item-more right" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>
                   Next post&nbsp;
                   <i className="mi-chevron-right" />
-                </a>
+                </button>
               </div>
               {/* End Prev/Next Post */}
             </div>

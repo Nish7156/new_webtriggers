@@ -28,7 +28,7 @@ function BlogCards() {
                       <Link to="/blog/123">
                         <img
                           src="/images/demo-modern/blog/1.jpg"
-                          alt="Image Description"
+                          alt=""
                         />
                       </Link>
                     </div>
@@ -45,21 +45,21 @@ function BlogCards() {
           </div>
           {/* Pagination */}
           <div className="pagination justify-content-center">
-            <a href="#">
+            <button type="button" className="pagination-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
               <i className="mi-chevron-left" />
               <span className="visually-hidden">Previous page</span>
-            </a>
-            <a href="#" className="active">
+            </button>
+            <button type="button" className="pagination-link active" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
               1
-            </a>
-            <a href="#">2</a>
-            <a href="#">3</a>
+            </button>
+            <button type="button" className="pagination-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>2</button>
+            <button type="button" className="pagination-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>3</button>
             <span className="no-active">...</span>
-            <a href="#">9</a>
-            <a href="#">
+            <button type="button" className="pagination-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>9</button>
+            <button type="button" className="pagination-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
               <i className="mi-chevron-right" />
               <span className="visually-hidden">Next page</span>
-            </a>
+            </button>
           </div>
           {/* End Pagination */}
         </div>

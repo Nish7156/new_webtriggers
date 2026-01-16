@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import BlogSingleDetails from "./components/Pages/Blogs/BlogDetails/BlogSingleDetails";
 import { Helmet } from "react-helmet";
-import { Link, Outlet, useParams,useLocation } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 function BlogSingle() {
   const location = useLocation();

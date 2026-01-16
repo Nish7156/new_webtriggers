@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Header() {
   const [isOpen, setisOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
 
   const HeaderMenus = [
     { id: 1, title: "Home", link: "/" ,islink:true},
@@ -55,7 +54,7 @@ function Header() {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      className={activeSection === data.link ? "active" : ""}
+                      className=""
                       onClick={()=>setisOpen(false)}
                       style={{cursor:'pointer'}}
                     >

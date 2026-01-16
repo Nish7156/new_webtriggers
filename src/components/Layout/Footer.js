@@ -29,7 +29,7 @@ function Footer() {
                 <a
                   href="https://www.facebook.com/profile.php?id=100062609944930"
                   title="Facebook"
-                  rel="noopener nofollow"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
                 >
                   <span class="visually-hidden">Facebook</span>
@@ -38,7 +38,7 @@ function Footer() {
                 <a
                   href="https://www.instagram.com/webtriggers11"
                   title="Instagram"
-                  rel="noopener nofollow"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
                 >
                   <span class="visually-hidden">Instagram</span>
@@ -47,7 +47,7 @@ function Footer() {
                 {/* <a
                   href="#"
                   title="Behance"
-                  rel="noopener nofollow"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
                 >
                   <span class="visually-hidden">Behance</span>
@@ -56,7 +56,7 @@ function Footer() {
                 <a
                   href="#"
                   title="Dribbble"
-                  rel="noopener nofollow"
+                  rel="noopener noreferrer nofollow"
                   target="_blank"
                 >
                   <span class="visually-hidden">Dribbble</span>

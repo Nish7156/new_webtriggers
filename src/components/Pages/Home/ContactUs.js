@@ -76,7 +76,7 @@ function ContactUs() {
               <div class="round overflow-hidden">
                 <img
                   src="images/demo-strong/section-image-5.jpg"
-                  alt="Image Description"
+                  alt=""
                   class="wow scaleOutIn"
                   data-wow-offset="110"
                 />

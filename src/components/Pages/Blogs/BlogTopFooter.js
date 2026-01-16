@@ -13,33 +13,33 @@ function BlogTopFooter() {
                 <div className="widget-body">
                   <ul className="clearlist widget-menu">
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         Branding
-                      </a>
+                      </button>
                       <small>- 7</small>
                     </li>
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         Design
-                      </a>
+                      </button>
                       <small>- 15</small>
                     </li>
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         Development
-                      </a>
+                      </button>
                       <small>- 3</small>
                     </li>
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         Photography
-                      </a>
+                      </button>
                       <small>- 5</small>
                     </li>
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         Other
-                      </a>
+                      </button>
                       <small>- 1</small>
                     </li>
                   </ul>
@@ -53,14 +53,14 @@ function BlogTopFooter() {
                 <h3 className="widget-title">Tags</h3>
                 <div className="widget-body">
                   <div className="tags">
-                    <a href="">Design</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Digital</a>
-                    <a href="">Branding</a>
-                    <a href="">Theme</a>
-                    <a href="">Clean</a>
-                    <a href="">UI &amp; UX</a>
-                    <a href="">Love</a>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Design</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Portfolio</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Digital</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Branding</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Theme</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Clean</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>UI &amp; UX</button>
+                    <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0, margin: '0 5px' }}>Love</button>
                   </div>
                 </div>
               </div>
@@ -73,19 +73,19 @@ function BlogTopFooter() {
                 <div className="widget-body">
                   <ul className="clearlist widget-menu">
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         February 2021
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         January 2021
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" title="">
+                      <button type="button" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', padding: 0 }}>
                         December 2020
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -123,8 +123,8 @@ function BlogTopFooter() {
                       <div className="form-tip">
                         <i className="icon-info size-16" aria-hidden="true" />
                         By sending the form you agree to the{" "}
-                        <a href="#">Terms &amp; Conditions</a> and{" "}
-                        <a href="#">Privacy Policy</a>.
+                        <a href="/terms">Terms &amp; Conditions</a> and{" "}
+                        <a href="/privacy">Privacy Policy</a>.
                       </div>
                       <div
                         id="subscribe-result"

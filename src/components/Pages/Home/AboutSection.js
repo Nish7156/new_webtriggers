@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 
 function AboutSection() {
   return (
@@ -22,7 +22,7 @@ function AboutSection() {
                 <div class="call-action-4-image-1">
                   <img
                     src="images/banners/uiux-7.jpg"
-                    alt="Image description"
+                    alt=""
                     class="wow scaleOutIn"
                     data-wow-duration="1.2s"
                   />
@@ -30,7 +30,7 @@ function AboutSection() {
                 <div class="call-action-4-image-2">
                   <img
                     src="images/banners/uiux-2.jpg"
-                    alt="Image description"
+                    alt=""
                     class="wow scaleOutIn"
                     data-wow-duration="1.2s"
                     data-wow-offset="0"
@@ -77,7 +77,7 @@ function AboutSection() {
               <div class="round overflow-hidden">
                 <img
                   src="images/banners/uiux-3.jpg"
-                  alt="Image description"
+                  alt=""
                   class="wow scaleOutIn"
                   data-wow-duration="1.2s"
                 />
@@ -85,7 +85,7 @@ function AboutSection() {
               <div class="round overflow-hidden">
                 <img
                   src="images/banners/uiux-4.jpg"
-                  alt="Image description"
+                  alt=""
                   class="wow scaleOutIn"
                   data-wow-duration="1.2s"
                 />
@@ -93,7 +93,7 @@ function AboutSection() {
               <div class="round overflow-hidden">
                 <img
                   src="images/banners/uiux-6.jpg"
-                  alt="Image description"
+                  alt=""
                   class="wow scaleOutIn"
                   data-wow-duration="1.2s"
                 />

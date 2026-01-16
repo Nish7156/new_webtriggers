@@ -72,7 +72,7 @@ function PortfolioSection() {
               {ProjectsList.map((data) => {
                 return (
                   <div key={data.id} class="portfolio-4-item">
-                    <a href={`${data.link}`} target="_blank">
+                    <a href={data.link || "#"} target={data.link ? "_blank" : undefined} rel={data.link ? "noopener noreferrer" : undefined}>
                       <div class="portfolio-4-image ">
                         <img
                           src={`${data.img}`}
@@ -81,7 +81,7 @@ function PortfolioSection() {
                             height: "400px",
                             objectFit: "cover"
                           }}
-                          alt="Image Description"
+                          alt={data.title}
                         />
                       </div>
                       <div class="portfolio-4-intro">

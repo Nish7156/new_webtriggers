@@ -22,26 +22,26 @@ function BlogBannerDetails() {
               data-wow-delay="0.2s"
             >
               <div className="d-inline-block me-3">
-                <a href="#">
+                <span>
                   <i className="mi-clock size-16" />
                   <span className="visually-hidden">Date:</span> December 25
-                </a>
+                </span>
               </div>
               <div className="d-inline-block me-3">
-                <a href="#">
+                <span>
                   <i className="mi-user size-16" />
                   <span className="visually-hidden">Author:</span> John Doe
-                </a>
+                </span>
               </div>
               <div className="d-inline-block me-3">
                 <i className="mi-folder size-16" />
                 <span className="visually-hidden">Categories:</span>
-                <a href="#">Design</a>, <a href="#">Branding</a>
+                <span>Design</span>, <span>Branding</span>
               </div>
               <div className="d-inline-block me-3">
-                <a href="#">
+                <span>
                   <i className="mi-message size-16" /> 5 Comments
-                </a>
+                </span>
               </div>
             </div>
             {/* End Author, Categories, Comments */}

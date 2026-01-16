@@ -19,7 +19,7 @@ function MarqueeText() {
           <div class="row mb-100 mb-sm-80">
             <div class="col-sm-7 col-md-5">
               <div class="circle overflow-hidden">
-                <img src="images/banners/uiux-1.jpg" alt="Image Description" />
+                <img src="images/banners/uiux-1.jpg" alt="" />
               </div>
             </div>
           </div>
